@@ -22,12 +22,13 @@ extension TextStyleExtension on TextStyle {
   TextStyle get txt4Xl => merge(const TextStyle(fontSize: 28));
   TextStyle get textWhite => merge(const TextStyle(color: Colors.white));
   TextStyle get textGrey => merge(const TextStyle(color: Colors.grey));
-  TextStyle get textRed => merge(const TextStyle(color: Colors.red));
+  TextStyle get textRed => merge(const TextStyle(color: kRedColor));
   TextStyle get textBlack => merge(const TextStyle(color: Colors.black));
   TextStyle get txtRegular => merge(const TextStyle(fontFamily: kFontYekanBakhRegular));
   TextStyle get txtYekanBakh => merge(const TextStyle(fontFamily: kFontYekanbakh));
   TextStyle get txtMedium=> merge(const TextStyle(fontWeight: FontWeight.w500));
   TextStyle get txtBold => merge(const TextStyle(fontWeight: FontWeight.w700));
+  TextStyle get txtDotted => merge(const TextStyle(decoration: TextDecoration.underline, decorationStyle: TextDecorationStyle.dotted,shadows: [Shadow(color: Colors.red, offset: Offset(0, -7))],color: Colors.transparent,decorationThickness: 4,decorationColor: kRedColor,));
 }
 
 const TextStyle txt  = TextStyle();

@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:easy_surprise/constant.dart';
 import 'package:easy_surprise/widgets/app_bar.dart';
 import 'package:easy_surprise/widgets/custom_carousel.dart';
