@@ -3,6 +3,7 @@ import 'package:easy_surprise/constant.dart';
 import 'package:easy_surprise/widgets/app_bar.dart';
 import 'package:easy_surprise/widgets/custom_carousel.dart';
 import 'package:easy_surprise/widgets/last_surprise_section.dart';
+import 'package:easy_surprise/widgets/type_surprise_section.dart';
 import 'package:flutter/material.dart';
 
 
@@ -20,21 +21,31 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
       child: Scaffold(
           backgroundColor: kBackColor,
-          body: Column(
+          body: Stack(
             children: [
-              const CustomAppBar(),
-              const SizedBox(
-                height: 25,
-              ),
-              const CustomCarousel(),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
+              SingleChildScrollView(
                 child: Column(
-                  children: const [
-                    LastSurpriseSection(),
+                  children: [
+                    const SizedBox(
+                      height: 90,
+                    ),
+                    const CustomCarousel(),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
+                      child: Column(
+                        children: const [
+                          LastSurpriseSection(),
+                          SizedBox(
+                            height: 25,
+                          ),
+                          TypeSurpriseSection(),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
+              const CustomAppBar(),
             ],
           )),
     );

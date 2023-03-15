@@ -22,7 +22,7 @@ class CustomAppBar extends StatelessWidget {
           const SizedBox(width: 10,),
           Image.asset('assets/images/easysurprise.png',height: 24,width: 124),
           const Spacer(),
-          Image.asset('assets/images/icon_pin.png',height: 15,width: 12,color: kPinColor,),
+          Image.asset('assets/images/icon_pin.png',height: 15,width: 12,color: kRedColor,),
           const SizedBox(width: 10,),
           Text('آمل',style: txt.txtYekanBakh.txtMedium.txtLg,),
         ],

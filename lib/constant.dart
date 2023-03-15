@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 
 const kBackColor = Color(0xffF9F9F9);
-const kPinColor = Color(0xffD11238);
+const kRedColor = Color(0xffD11238);
 
 
 const kFontYekanbakh = 'YekanBakh';

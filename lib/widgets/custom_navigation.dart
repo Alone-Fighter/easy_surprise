@@ -61,7 +61,6 @@ class _CustomNavigationState extends State<CustomNavigation> {
               selectedColor: Colors.green,
               backgroundColor: Colors.lightGreenAccent,
               title: const Text('')),
-
           BottomBarItem(
               icon: const Icon(
                 Icons.person_outline,
@@ -72,7 +71,6 @@ class _CustomNavigationState extends State<CustomNavigation> {
               backgroundColor: Colors.purpleAccent,
               selectedColor: Colors.deepPurple,
               title: const Text('')),
-
         ],
         hasNotch: true,
         fabLocation: StylishBarFabLocation.center,
@@ -102,6 +100,7 @@ class _CustomNavigationState extends State<CustomNavigation> {
       body: SafeArea(
         child: PageView(
           controller: controller,
+          physics: const NeverScrollableScrollPhysics(),
           onPageChanged: (idx) {
             setState(() {
               selected = idx;
