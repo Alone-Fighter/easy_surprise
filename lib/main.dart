@@ -1,3 +1,4 @@
+import 'package:easy_surprise/screens/intro_screen.dart';
 import 'package:easy_surprise/widgets/custom_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: [
         Locale('fa', ''), // Persian
       ],
-      home: CustomNavigation(),
+      home: IntroScreen(),
     );
   }
 }
