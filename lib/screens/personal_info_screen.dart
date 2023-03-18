@@ -29,7 +29,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
   var genderValid =
       (dynamic value) => value != null ? null : "انتخاب جنسیت اجباری است";
   var stateValid =
-      (dynamic value) => value != null ? null : "انتخاب جنسیت اجباری است";
+      (dynamic value) => value != null ? null : "انتخاب استان اجباری است";
 
   @override
   void initState() {
