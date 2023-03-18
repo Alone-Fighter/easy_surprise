@@ -38,6 +38,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.2.1
   stylish_bottom_bar: ^1.0.0
+  percent_indicator: ^4.2.3
+  flutter_form_builder: ^7.7.0
+  dotted_border: ^2.0.0+3
+
 
 dev_dependencies:
   flutter_test:
